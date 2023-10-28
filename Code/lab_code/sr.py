@@ -39,7 +39,7 @@ class SR:
     # 若仍剩余窗口空间，则构造数据报发送；否则拒绝发送数据
     def send_data(self):
         if self.next_seq == len(self.data):  # 判断是否还有缓存数据可以发送
-            print('服务器:发送完毕，等待确认')
+            print('服务器:已经发送完毕，等待确认')
             return
         if self.next_seq < self.send_base + self.send_window_size:  # 窗口中仍有可用空间
             if random.random() > self.pkt_loss:

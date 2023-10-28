@@ -47,7 +47,7 @@ class GBN:
 
     # 超时处理函数：计时器置0
     def handle_time_out(self):
-        print('超时，开始重传')
+        print('接收ACK时间超时，开始重传')
         self.time_count = 0  # 超时计次重启
         for i in range(self.send_base, self.next_seq):  # 发送空中的所有分组
             if random.random() > self.pkt_loss:  # 概率性重传
