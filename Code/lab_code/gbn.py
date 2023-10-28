@@ -4,7 +4,7 @@ import socket
 
 from lab_code.main import Host
 
-
+# 通过该方法运行GBN协议
 class GBN:
 
     def __init__(self, local_address=Host.host_address_1, remote_address=Host.host_address_2):

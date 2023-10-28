@@ -27,7 +27,8 @@ class Host:
     def make_pkt(pkt_num, data):
         return (str(pkt_num) + ' ' + str(data)).encode(encoding='utf-8')
 
-
+# 通过该方法运行GBN协议
+# 通过该方法运行GBN协议
 # 通过该方法运行GBN协议
 def run_gbn():
     from lab_code.gbn import GBN

@@ -77,6 +77,7 @@ class SR_rev:
             self.send_base = self.send_base + 1  # 滑动窗口
             print('客户端:窗口滑动到' + str(self.send_base))
 
+    # 通过该方法运行GBN协议
     def client_run(self):
         while True:
             self.send_data()  # 发送数据
